@@ -1,0 +1,7 @@
+-- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'xuqi2006';
+-- FLUSH PRIVILEGES;
+-- use myblog
+-- select * from users
+-- insert into users (username, `password`, realname) values ('zhangsan','123','张三')
+-- select * from blogs
+-- insert into blogs (title, content, createtime, author) values ('第二篇文章','这是第二篇文章',1574693981320,'徐子玉')

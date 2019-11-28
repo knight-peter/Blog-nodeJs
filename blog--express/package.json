@@ -12,10 +12,16 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "my-sql": "^1.2.15"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
     "nodemon": "^2.0.1"
-  }
+  },
+  "description": "- bin\r > 起服务\r - public\r > 静态文件\r - routes\r > 路由\r - views\r > html模板\r - app.js\r > 处理返回值",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

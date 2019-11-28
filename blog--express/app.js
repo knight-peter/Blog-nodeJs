@@ -5,8 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // 引用路由
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// var indexRouter = require('./routes/index');
+// var usersRouter = require('./routes/users');
 const blogRouter = require('./routes/blog')
 const userRouter = require('./routes/user')
 // 客户端访问形成实例
@@ -14,8 +14,8 @@ var app = express();
 
 // view engine setup
 // 视图引擎
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'jade');
 
 // 自动生成日志
 app.use(logger('dev'));
@@ -27,8 +27,8 @@ app.use(cookieParser());
 // 处理静态文件
 // app.use(express.static(path.join(__dirname, 'public')));
 // 注册路由，定义父级path
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
 app.use('/api/blog', blogRouter);
 app.use('/api/user', userRouter);
 
@@ -45,7 +45,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  // res.render('error');
 });
 
 module.exports = app;

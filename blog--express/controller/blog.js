@@ -1,4 +1,5 @@
 // mysql
+const xss = require('xss')
 const {
   exec
 } = require('../db/mysql.js');

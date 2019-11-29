@@ -1,9 +1,18 @@
+const {exec,} = require('../db/mysql')
+const {genPassword} = require('../utils/cryp')
+
 const loginCheck = (username,password) =>{
   // 先使用假数据
-  if(username === 'zhangsan' && password === '123'){
-    return true
-  }
-  return false
+  return new Promise((resolve,reject)=>{
+    if(username === 'zhangsan' && password === '123'){
+      resolve({
+        username:'zhangsan',
+        password:'123'
+      })
+    }
+    reject(false)
+  })
+  
 }
 
 module.exports = {
